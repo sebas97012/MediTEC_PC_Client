@@ -28,6 +28,13 @@ public class logIn_controller {
     void SignIn(ActionEvent event) {
         MainScreenController.IP = ip_input.getText();
         System.out.print(MainScreenController.IP);
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+            Scene scene1 = new Scene(root,1000,720);
+            Main.window.setScene(scene1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 

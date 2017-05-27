@@ -12,11 +12,12 @@ import javafx.scene.layout.VBox;
 
 public class MainScreenController {
     public static String IP;
+    public static String label_;
     @FXML
     private TreeView<ClinicalCase> treeView;
 
     @FXML
-    private Label bottom_label;
+    static Label bottom_label;
 
     @FXML
     private ListView<String> schedule_area;
