@@ -7,17 +7,22 @@ import datastructures.binarytree.BinaryTree;
 import datastructures.linkedlist.LinkedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 
-public class MainScreenController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class MainScreenController implements Initializable {
+
     public static String IP;
     public static String label_;
     @FXML
     private TreeView<ClinicalCase> treeView;
 
     @FXML
-    static Label bottom_label;
+    private Label bottom_label = new Label();
 
     @FXML
     private ListView<String> schedule_area;
@@ -52,6 +57,11 @@ public class MainScreenController {
 
         //for
         TreeItem<String> root;
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        bottom_label.setText(label_);
     }
 
     public TreeItem<String> makeBranch(String title, TreeItem<String> parent) {
