@@ -14,16 +14,22 @@ import javafx.scene.control.TextField;
 public class logIn_controller {
 
     @FXML
-    private TextField username_input = new TextField();
+    private TextField username_input;
 
     @FXML
-    private PasswordField password_input = new PasswordField();
+    private PasswordField password_input;
 
     @FXML
-    private TextField ip_input = new TextField();
+    private TextField ip_input;
 
     @FXML
-    private Button logIn_button = new Button();
+    private Button logIn_button;
+    @FXML
+    void SignIn(ActionEvent event) {
+        MainScreenController.IP = ip_input.getText();
+        System.out.print(MainScreenController.IP);
+
+    }
 
     @FXML
     void logIn(ActionEvent event) {

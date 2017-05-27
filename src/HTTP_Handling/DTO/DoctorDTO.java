@@ -7,6 +7,24 @@ import datastructures.linkedlist.LinkedList;
 import datastructures.splaytree.SplayTree;
 
 public class DoctorDTO implements Comparable<DoctorDTO> {
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	private String password;
+	private String name;
 	private int id;
 	private AVLTree<Appointment> appointmentsList;
 	private SplayTree<PatientDTO> patientsList;
