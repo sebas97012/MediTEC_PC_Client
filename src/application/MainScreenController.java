@@ -1,14 +1,10 @@
 package application;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
-import javafx.scene.control.TreeView;
+import javafx.scene.control.*;
 
 public class MainScreenController {
-
+    protected static String IP;
     @FXML
     private TreeView<?> treeView;
 
@@ -24,4 +20,12 @@ public class MainScreenController {
     @FXML
     private Button sendButtton;
 
+
+
+    public TreeItem<String> makeBranch(String title, TreeItem<String> parent) {
+        TreeItem<String> item = new TreeItem<>(title);
+        item.setExpanded(true);
+        parent.getChildren().add(item);
+        return item;
+    }
 }

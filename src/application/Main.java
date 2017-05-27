@@ -25,7 +25,6 @@ public class Main extends Application {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(ApacheHttpClient.httpGet("http://192.168.100.15:9080/MediTEC/doctors"));
 		launch(args);
 	}
 }

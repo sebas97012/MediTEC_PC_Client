@@ -27,8 +27,8 @@ public class logIn_controller {
 
     @FXML
     void logIn(ActionEvent event) {
-    	MainScreen_Controller.IP = ip_input.getText();
-    	System.out.print(MainScreen_Controller.IP);
+    	MainScreenController.IP = ip_input.getText();
+    	System.out.print(MainScreenController.IP);
     	try {
 			Parent root = FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
 			Scene scene1 = new Scene(root,1000,720);
