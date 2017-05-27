@@ -1,5 +1,6 @@
 package application;
 	
+import HTTP_Handling.ApacheHttpClient;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
@@ -24,6 +25,7 @@ public class Main extends Application {
 	}
 	
 	public static void main(String[] args) {
+		System.out.println(ApacheHttpClient.httpGet("http://192.168.100.15:9080/MediTEC/doctors"));
 		launch(args);
 	}
 }

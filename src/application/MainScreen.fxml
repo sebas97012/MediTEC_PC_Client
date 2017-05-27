@@ -56,7 +56,7 @@
             <ListView fx:id="chatField" prefHeight="420.0" prefWidth="143.0" />
             <AnchorPane prefHeight="58.0" prefWidth="211.0">
                <children>
-                  <TextField fx:id="chat_input" layoutX="2.0" prefHeight="26.0" prefWidth="123.0" promptText="Type your message here" />
+                  <TextField fx:id="chat_input" layoutX="2.0" promptText="Type your message here" />
                   <Button fx:id="sendButtton" mnemonicParsing="false" text="Send" AnchorPane.rightAnchor="4.0" />
                </children>
             </AnchorPane>
