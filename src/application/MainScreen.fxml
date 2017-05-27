@@ -74,7 +74,7 @@
             <AnchorPane prefHeight="58.0" prefWidth="211.0">
                <children>
                   <TextField fx:id="chat_input" layoutX="2.0" promptText="Type your message here" />
-                  <Button fx:id="sendButtton" mnemonicParsing="false" text="Send" AnchorPane.rightAnchor="5.0" />
+                  <Button fx:id="sendButtton" mnemonicParsing="false" onAction="#updateChat" text="Send" AnchorPane.rightAnchor="5.0" />
                </children>
             </AnchorPane>
          </children>
